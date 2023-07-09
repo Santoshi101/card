@@ -1,0 +1,30 @@
+@media (max-width:1400px){
+
+}
+@media (max-width:700px){
+    
+}
+@media (max-width:450px){
+    
+}
+@media (max-width:320px){
+    .imgslider{
+        width: 80%;
+        height: 40%;
+        margin: 9.4%;
+    }
+    .bubbles span{
+        width: 0.009px;
+        height: 0.009px;
+        border-radius: 50%;
+        box-shadow: 0.0009px pink inset;
+    }
+    .bubbles span:nth-child(even)
+    {
+    background: #ff2d75;
+    box-shadow: 0 #ff2d75,
+    0 0 10px #ff2d75,
+    0 0 20px #ff2d75;
+    }
+}
+

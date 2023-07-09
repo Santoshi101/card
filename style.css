@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    color: #4fc3dc;
+    margin-left: 5%;
+}
+h3
+{
+    text-align: center;
+    font-size: 40px;
+    color: #ff2d75;
+    margin-left: 5%;
+}
+body
+{
+    min-height: 100vh;
+    background: #0c192c;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 5%;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d75,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+.imgslider
+{
+    width: 35%;
+    height: 70%;
+    background-image: url("images/1.jpeg");
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 20s linear infinite;
+    margin-left: 35%;
+    border-radius: 60%;
+    margin-top: 2%;
+
+}
+@keyframes changeImage
+{
+    0%
+    {
+        background-image: url("images/1.jpeg");
+    }
+    8%
+    {
+        background-image: url("images/2.jpeg");
+    }
+    16%
+    {
+        background-image: url("images/3.jpeg");
+    }
+    24%
+    {
+        background-image: url("images/4.jpeg");
+    }
+    32%
+    {
+        background-image: url("images/5.jpeg");
+    }
+    40%
+    {
+        background-image: url("images/6.jpeg");
+    }
+    48%
+    {
+        background-image: url("images/7.jpeg");
+    }
+    56%
+    {
+        background-image: url("images/8.jpeg");
+    }
+    64%
+    {
+        background-image: url("images/9.jpeg");
+    }
+    72%
+    {
+        background-image: url("images/10.jpeg");
+    }
+    80%
+    {
+        background-image: url("images/11.jpeg");
+    }
+    88%
+    {
+        background-image: url("images/12.jpeg");
+    }
+    96%
+    {
+        background-image: url("images/13.jpeg");
+    }
+    104%
+    {
+        background-image: url("images/14.jpeg");
+    }
+    112%
+    {
+        background-image: url("images/15.jpeg");
+    }
+    120%
+    {
+        background-image: url("images/16.jpeg");
+    }
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
